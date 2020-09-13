@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/react",
+    "plugin:testing-library/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".test.js"] }],
+    "no-console": ["error"],
+    "testing-library/no-debug": "error"
+  }
+}
